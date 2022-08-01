@@ -1,0 +1,211 @@
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  -webkit-animation: fade-in 1s ease-in;
+          animation: fade-in 1s ease-in;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Red Hat Text", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-color: hsl(234deg, 17%, 12%);
+}
+
+a,
+a:active,
+a:hover,
+ul,
+li,
+li:hover {
+  text-decoration: none;
+  color: #000;
+  list-style: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 39.9375em) {
+  main {
+    overflow: hidden;
+  }
+}
+@media (max-width: 63.9375em) {
+  main {
+    overflow: hidden;
+  }
+}
+main .main-background {
+  width: 100%;
+}
+main .main-background img {
+  width: 100%;
+  height: 100%;
+  min-width: 1440px;
+}
+main .hills-background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 39.9375em) {
+  main .hills-background {
+    overflow: hidden;
+  }
+}
+main .hills-background img {
+  width: 100%;
+  height: 100%;
+  min-width: 1440px;
+  margin: auto;
+}
+@media (max-width: 63.9375em) {
+  main .hills-background img {
+    min-width: unset;
+    min-height: 270px;
+  }
+}
+@media (max-width: 39.9375em) {
+  main .hills-background img {
+    transform: scaleX(-1);
+    min-width: 1064px;
+    min-height: 260px;
+  }
+}
+main .c-body {
+  position: absolute;
+  margin-bottom: 200px;
+}
+main .text-intro {
+  display: block;
+  padding-bottom: 80px;
+}
+@media (max-width: 63.9375em) {
+  main .text-intro {
+    padding-bottom: 50px;
+  }
+}
+main .text-intro h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+main .countdown-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .countdown-content p:not(:last-child) {
+  padding-right: 55px;
+}
+@media (max-width: 63.9375em) {
+  main .countdown-content p:not(:last-child) {
+    padding-right: 35px;
+  }
+}
+@media (max-width: 39.9375em) {
+  main .countdown-content p:not(:last-child) {
+    padding-right: 20px;
+  }
+}
+main .countdown-content .top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .countdown-content .bot {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .countdown-content .d-size {
+  font-size: 84px;
+  font-weight: 700;
+  color: hsl(345deg, 95%, 68%);
+}
+@media (max-width: 63.9375em) {
+  main .countdown-content .d-size {
+    font-size: 56px;
+  }
+}
+@media (max-width: 39.9375em) {
+  main .countdown-content .d-size {
+    font-size: 48px;
+  }
+}
+main .countdown-content span {
+  display: block;
+  font-size: 14px;
+  color: hsl(237deg, 18%, 59%);
+  letter-spacing: 4px;
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 700;
+}
+@media (max-width: 63.9375em) {
+  main .countdown-content span {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 39.9375em) {
+  main .countdown-content span {
+    font-size: 10px;
+    padding-top: 20px;
+  }
+}
+main .socmed-icons {
+  position: absolute;
+  bottom: 90px;
+}
+main .socmed-icons .space {
+  margin: 0 15px;
+  color: hsl(237deg, 18%, 59%);
+}
+main .socmed-icons .space:hover {
+  cursor: pointer;
+  color: hsl(345deg, 95%, 68%);
+}/*# sourceMappingURL=style.css.map */

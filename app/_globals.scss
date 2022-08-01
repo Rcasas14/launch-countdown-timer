@@ -1,0 +1,49 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// colors
+$grayishBlue : hsl(237, 18%, 59%);
+$softRed : hsl(345, 95%, 68%);
+
+$white : hsl(0, 0%, 100%);
+$darkDesaturatedBlue : hsl(236, 21%, 26%);
+$veryDarkBlue : hsl(235, 16%, 14%);
+$veryDarkBlackBlue : hsl(234, 17%, 12%);
+
+//font-style
+$redHat: 'Red Hat Text', sans-serif;
+
+
+body {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: $redHat;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $veryDarkBlackBlue;
+}
+
+a,
+a:active,
+a:hover,
+ul,
+li,
+li:hover {
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
